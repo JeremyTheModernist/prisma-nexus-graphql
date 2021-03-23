@@ -6,7 +6,7 @@ import {context, Context} from './api/context'
 const server = new ApolloServer({schema, context});
 
 server.listen({
-  port: process.env.PORT || 4000
+  port: process.env.PORT || 3300
 }).then(({ url }) => {
     console.log(`🚀 Server ready at ${url}`)
   })
