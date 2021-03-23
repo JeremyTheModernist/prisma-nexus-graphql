@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx prisma generate && npm run build:reflection && tsc",
-    "build:reflection": "NEXUS_SHOULD_EXIT_AFTER_REFLECTION=true ts-node --transpile-only index.ts",
+    "build:reflection": "NEXUS_SHOULD_EXIT_AFTER_REFLECTION=true ts-node --transpile-only ./api/schema.ts",
     "dev": "nodemon --exec 'ts-node --transpile-only' index.ts",
     "dev:migrate": "npx prisma migrate dev",
     "start": "NODE_ENV=production node dist/index.js"
