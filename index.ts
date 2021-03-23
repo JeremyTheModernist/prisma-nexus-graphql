@@ -8,7 +8,7 @@ const server = new ApolloServer({schema, context});
 server.listen({
   port: process.env.PORT || 3300
 }).then(({ url }) => {
-    console.log("PROCESS PORT", process.env.PORT)
+    console.log("PROCESS PORT", process.env.DATABASE_URL)
     console.log(`🚀 Server ready at ${url}`)
   })
 
