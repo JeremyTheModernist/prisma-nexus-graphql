@@ -4,11 +4,12 @@ import {context, Context} from './api/context'
 
 // pass the prisma context in here so your API can access it for db operations
 const server = new ApolloServer({schema, context});
+const port = process.env.PORT || 4001
 
 server.listen({
-  port: process.env.PORT || 3300
+  port
 }).then(({ url }) => {
-    console.log("PROCESS PORT", process.env.DATABASE_URL)
+    console.log("PROCESS PORT", process.env.DATABASE_URL, process.env)
     console.log(`🚀 Server ready at ${url}`)
   })
 
