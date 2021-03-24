@@ -34,7 +34,7 @@ Nexus provides a code-first approach to GraphQL. So you write code, usually in O
 
 Nexus transpiles that code on the fly to generate a fully typed API. This provides strong type support, intellisense, and auto-complete in vscode!
 
-### Single ource of Truth:
+### Single Source of Truth:
 
 Previously with SDL, schemas we're kept in separate files from Queries and Mutations. This was bug prone and time intensive. Nexus cuts out all of this mapping, and allows collocation of schemas, mutations, and queries in the same file.
 
