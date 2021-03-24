@@ -1,6 +1,6 @@
 # Prisma with Nexus and GraphQL
 
-This project provides a simple boiler plate for using [Prisma](https://www.prisma.io/), with [Nexus](https://nexusjs.org/), [GraphQL](https://GraphQL.org/), and Apollo Server.
+This project provides a simple boiler plate for using [Prisma](https://www.prisma.io/), with [Nexus](https://nexusjs.org/), [GraphQL](https://GraphQL.org/), and [Apollo Server](https://www.apollographql.com/docs/apollo-server/).
 
 ## What can be achieved?
 
