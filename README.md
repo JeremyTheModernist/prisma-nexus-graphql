@@ -6,6 +6,42 @@ This project provides a simple boiler plate for using [Prisma](https://www.prism
 
 By using these technologies, you can quickly create a fully typed, GraphQL API that interfaces with a postgreSQL database.
 
+## Quick Start
+
+To quickly get started with this project, you will need to:
+
+- Create a PostgreSQL database for Prisma
+- Migrate the Prisma schema to the database
+- Start up the server
+
+### Create a PostgreSQL database:
+
+Create a new `.env` file in the `root` directory of the project. Once created, provide the file with a new environmental variable housing the PostgreSQL database link.
+
+If the db was created locally, then the url in the `.env` file should look something like this:
+
+```
+DATABASE_URL="postgresql://<username>@localhost:5432/<dbName>?schema=public"
+```
+
+### Migrate the Prisma schema
+
+In the terminal, run:
+
+```
+npm run dev:migrate
+```
+
+### Start up the server
+
+In the terminal, run:
+
+```
+npm run dev
+```
+
+Now visit `http://localhost:4001/` to interact with GraphQL playground.
+
 ## What are these technologies?
 
 - Prisma is an ORM (Object Relational Mapper) that provides a rich set of type safe APIs for interacting with a SQL database.
