@@ -147,7 +147,7 @@ It's important to just run reflection on the Nexus schema file itself rather tha
 
 ## Heroku Build Hooks
 
-Heroku has hooks you can use when it builds your project. They call this build and deploy cycle a ![release phase](https://rubyyagi.com/auto-migrate-heroku/).
+Heroku has hooks you can use when it builds your project. They call this build and deploy cycle a [release phase](https://rubyyagi.com/auto-migrate-heroku/).
 
 Essentially, they designate certain scripts, like `build` and `start`, to be called and you can provide those scripts yourself.
 
